@@ -11,6 +11,10 @@ public class Entita {
         this.age = age;
     }
 
+    public Entita() {
+
+    }
+
     @Override
     public String toString() {
         return "Entita{" +

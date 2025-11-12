@@ -15,7 +15,7 @@ public class CustomerManager {
     }
 
     public void loadCustomerData(){
-        String csvSoubor = "C:\\Users\\SkalickýAleš_4wrtv7e\\Downloads\\PVA-Library\\src\\main\\java\\org\\example\\Data\\customer.csv";
+        String csvSoubor = "/Users/stehlik.petr08/Documents/untitled folder 5/src/main/java/org/example/Data/customer.csv";
         String radek;
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvSoubor))) {

@@ -7,13 +7,14 @@ import java.util.ArrayList;
 
 public class EmployeeManager {
     private ArrayList<Employee> employeeArrayList;
+    private Boss boss;
 
     public EmployeeManager() {
         this.employeeArrayList = new ArrayList<>();
     }
 
     public void loadEmployeeData(){
-        String csvSoubor = "C:\\Users\\SkalickýAleš_4wrtv7e\\Downloads\\PVA-Library\\src\\main\\java\\org\\example\\Data\\employee.csv";
+        String csvSoubor = "/Users/stehlik.petr08/Documents/untitled folder 5/src/main/java/org/example/Data/employee.csv";
         String radek;
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvSoubor))) {
@@ -39,4 +40,10 @@ public class EmployeeManager {
     }
 
 
+    public void addEmployee() {
+    }
+
+    public Employee[] getAllEmployees() {
+        return new Employee[0];
+    }
 }

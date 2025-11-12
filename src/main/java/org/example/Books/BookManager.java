@@ -13,7 +13,7 @@ public class BookManager {
     }
 
     public void loadBookData(){
-        String csvSoubor = "C:\\Users\\SkalickýAleš_4wrtv7e\\Downloads\\PVA-Library\\src\\main\\java\\org\\example\\Data\\book.csv";
+        String csvSoubor = "/Users/stehlik.petr08/Documents/untitled folder 5/src/main/java/org/example/Data/book.csv";
         String radek;
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvSoubor))) {
