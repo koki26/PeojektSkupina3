@@ -3,7 +3,7 @@ package org.example;
 public class Main {
 
     public static void main(String[] args) {
-        // sef
+        // sef MV
         // +2 zakaznicy
         // ukládání ()
         // vztup ()
