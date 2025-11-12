@@ -90,7 +90,11 @@ public class Library {
             System.out.println("\n=== " + currentUser.getType() + " PANEL ===");
             System.out.println("Přihlášen: " + currentUser.getName() + " " + currentUser.getLastName());
 
+
             if (currentUser.isManager()) {
+                System.out.println("1. Spravovat knihy");
+                System.out.println("2. Spravovat zaměstnance");
+                System.out.println("3. Zobrazit všechny záznamy");
                 showManagerMenu();
             } else if (currentUser.isAccountant()) {
                 showAccountantMenu();
@@ -98,27 +102,20 @@ public class Library {
                 showLibrarianMenu();
             }
 
-            System.out.println("9. Odhlásit se");
-            System.out.print("Volba: ");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine();
-
-            if (choice == 9) {
-                currentUser = null;
-                System.out.println("Odhlášení úspěšné.");
-                break;
-            }
         }
     }
 
     private void showManagerMenu() {
-        System.out.println("1. Spravovat knihy");
-        System.out.println("2. Spravovat zaměstnance");
-        System.out.println("3. Zobrazit všechny záznamy");
-
+        System.out.println("9. Odhlásit se");
+        System.out.print("Volba: ");
         int choice = scanner.nextInt();
         scanner.nextLine();
+
+        if (choice == 9) {
+            currentUser = null;
+            System.out.println("Odhlášení úspěšné.");
+        }
 
         switch (choice) {
             case 1:
@@ -136,13 +133,31 @@ public class Library {
     private void showAccountantMenu() {
         System.out.println("1. Zobrazit finanční přehled");
         System.out.println("2. Zobrazit statistiky");
-        // Další funkce pro účetního
+        System.out.println("9. Odhlásit se");
+        System.out.print("Volba: ");
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        if (choice == 9) {
+            currentUser = null;
+            System.out.println("Odhlášení úspěšné.");
+        }
     }
 
     private void showLibrarianMenu() {
+
         System.out.println("1. Půjčit knihu");
         System.out.println("2. Vrátit knihu");
         System.out.println("3. Vyhledat knihu");
+        System.out.println("9. Odhlásit se");
+        System.out.print("Volba: ");
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        if (choice == 9) {
+            currentUser = null;
+            System.out.println("Odhlášení úspěšné.");
+        }
         // Další funkce pro knihovníka
     }
 
