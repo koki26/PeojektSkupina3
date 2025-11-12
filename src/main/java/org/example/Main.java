@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         // sef
-        // +2 zakaznicy
+        // +2 zakaznicy ps
         // ukládání ()
         // vztup ()
         Library library = new Library();
