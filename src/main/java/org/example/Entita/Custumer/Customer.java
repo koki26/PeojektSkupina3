@@ -18,6 +18,6 @@ public class Customer extends Entita {
     }
 
     public void printDataCustomer(){
-        System.out.println("Name: " + getName() + " LastName " + getLastName() + " Age: " + getAge() +" Money: " + money + " Id:" + id);
+        System.out.println("Name: " + getName() + " LastName: " + getLastName() + " Age: " + getAge() +" Money: " + money + " Id:" + id);
     }
 }

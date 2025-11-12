@@ -1,3 +1,5 @@
-name,lastName,age,id
-Pepa,Novak,25,001
-Jan,Kovař,22,002
+name,lastName,age,id,type,username,password
+Pepa,Novak,25,1,MANAGER,pepa,heslo123
+Jan,Kovař,22,2,ACCOUNTANT,jan,ucetni456
+Marie,Novotna,30,3,LIBRARIAN,marie,knihovnik789
+Honza,Bajer,85,4,LIBRARIAN,s,s
