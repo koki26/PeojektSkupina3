@@ -3,7 +3,7 @@ package org.example;
 public class Main {
 
     public static void main(String[] args) {
-        // sef MV
+        // sef MV, boss bude exteddovat class employee a bude vypisovat random % produktivity zaměstnanců
         // +2 zakaznicy
         // ukládání ()
         // vztup ()
