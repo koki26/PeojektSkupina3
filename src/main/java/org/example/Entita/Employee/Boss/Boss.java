@@ -12,12 +12,11 @@ public class Boss extends Employee {
         Random random = new Random();
 
         System.out.println();
-        for (String name: Employee) {
+        for (String name: wEmployee) {
             int productivity = random.nextInt(101);
             System.out.println(name + "má produktivitu: " + productivity + "%");
         }
         Boss boss = new Boss();
         boss.printProductivity();
     }
-
 }
